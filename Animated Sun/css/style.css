@@ -1,0 +1,66 @@
+@keyframes sunimation{
+    0% {
+    transform: translate(-200px, 200px);
+    background: #d35400;
+  }
+  25% {
+    transform: translate(330px, 0px);
+    background: #f1c40f;
+  } 
+  50% {
+    transform: translate(668px, -50px);
+  }
+  75% {
+    transform: translate(1002px, 0px);
+    background: #f1c40f;
+  }
+  100% {
+    transform: translate(1336px, 200px);
+    background: #e74c3c;
+  }
+}
+@keyframes skymation{
+    0%{
+        background-color: darkblue;
+    }
+    10%{
+        background-color: lightpink;
+    }
+    30%{
+        background-color: skyblue;
+    }
+    70%{
+        background-color: skyblue;
+    }
+    90%{
+        background-color: lightpink;
+    }
+    100%{
+        background-color: darkblue;
+    }
+}
+#sun{
+    
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+     z-index: 5;
+    transform-origin: center;
+    animation-name: sunimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+body{
+    
+    height: 100%;
+    width:100%;
+    z-index: 0;
+    animation-name: skymation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
